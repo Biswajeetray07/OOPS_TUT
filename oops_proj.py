@@ -13,9 +13,9 @@ class  chatbook:
                             4. Press 4 to message a friend" 
                             5. Press any other key to exit""")  
         if user_input == '1':
-            pass
+            self.signup()
         elif user_input == '2':
-            pass
+            self.signin()
         elif user_input == '3':
             pass
         elif user_input == '4':
@@ -23,4 +23,28 @@ class  chatbook:
         else:
             exit()
 
+    def signup(self):
+        email = input("Enter your email: ")
+        password = input("setup your password: ")
+        self.username = email
+        self.password = password
+        print("Signup Successful!")
+        print("\n")
+        self.menu()
+
+    def signin(self):
+        if self.username == "" and self.password == "":
+            print("No user found! Please sign up first.")
+            self.menu()
+        else:
+            uname = input("Enter your email/username: ")
+            pwd = input("Enter your password: ")
+            if self.username == uname and self.password == pwd:
+                print("Login Successful!")
+                self.loggedin = True
+            else:
+                print("Invalid credentials! Please try again.")
+                self.menu()
+        print("\n")
+        self.menu()
 obj = chatbook()
