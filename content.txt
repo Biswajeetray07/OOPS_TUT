@@ -21,3 +21,9 @@ End to End Project (ChatBook class)
     > static method
 
     > Inheritance
+Inheritance code example
+inheritance is needed? (code reuseability, parent has access to child class)
+gets inherited? - Cmstructor, private attritutes, private —ttDds
+constructor Overloading & method Overloading
+Super keymrd(can be used Mily inside class, cm rot access variables/attributes, used inside child class)
+Types of inheritutce - 1. Single Inheritance | 2. "Multilevel | 3. Hierarchical | 4. Multiple <Diamond Problem> | 5. Hybrid
