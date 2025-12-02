@@ -13,5 +13,8 @@ class employee:
         print(f"Employee is traveling to {destination}")
     
 sam = employee()
-print(sam.salary)
+# print(sam.salary)
 sam.travel("New York")
+sam.name = "Samantha"
+
+print(sam.name)

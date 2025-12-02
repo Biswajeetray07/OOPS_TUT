@@ -1,9 +1,27 @@
 class  chatbook:
+    __user_id = 0
     def __init__(self):
+        self.id = chatbook.__user_id
+        chatbook.__user_id += 1
+        self.__name = "Default User" # encapsulated attribute
         self.username = ""
         self.password = ""
         self.loggedin = False
-        self.menu()
+        # self.menu()
+
+    @staticmethod
+    def get_id():
+        return chatbook.__user_id
+    @staticmethod
+    def set_id(value):
+        chatbook.__user_id = value
+
+        # Getter and Setter methods for encapsulated attribute
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self, value):
+        self.__name = value
 
     def menu(self):
         user_input = input("""Welcome to ChatBook! How would you like to proceed?  
